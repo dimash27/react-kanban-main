@@ -1,0 +1,40 @@
+.fullView {
+    background-color: white;
+    border-radius: 5px;
+    margin: 21px 25px;
+    height: 100%;
+    padding: 0px 0 0 12px;
+  }
+  .fullViewTitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+  .fullViewPar {
+    width: 621px;
+    height: 136px;
+    padding-top: 14px;
+  }
+  .close {
+    position: absolute;
+    right: 51px;
+    top: 126px;
+    width: 47px;
+    height: 32px;
+  }
+  
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 1px;
+    background-color: black;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  

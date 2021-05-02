@@ -1,0 +1,18 @@
+.button {
+    color: #5e6c84;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .button:hover {
+    background-color: white;
+  }
+  .button:disabled {
+    color: black;
+    cursor: default;
+    background-color: transparent;
+  }
+  

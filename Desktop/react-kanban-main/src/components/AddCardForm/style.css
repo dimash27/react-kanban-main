@@ -1,0 +1,24 @@
+.label {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 7px 12px;
+    border: none;
+    position: relative;
+    display: block;
+  }
+  .input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    outline: none;
+  }
+  .submit {
+    padding: 8px 23px;
+    background-color: #0079bf;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
