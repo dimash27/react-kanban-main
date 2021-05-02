@@ -1,0 +1,13 @@
+.ReadyItem {
+  margin-bottom: 20px;
+  transition: all 0.2s;
+
+  &__autocomplete {
+    background-color: #fff;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0 4px 10px 0 #c2b801;
+    box-shadow: 0 4px 10px 0 #c2b801;
+  }
+}

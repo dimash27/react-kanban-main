@@ -1,0 +1,81 @@
+@import "src/container/mixins";
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    color: #fff;
+    @include respond(small-phone) {
+      font-size: 90%;
+    }
+  }
+
+  &__controls-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__avatar {
+      cursor: pointer;
+    }
+
+    &__arrow {
+      background-color: #0067A3;
+      border: 0;
+      height: 10px;
+      width: 12px;
+      margin-left: 10px;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  &__drop-menu {
+    position: absolute;
+    background-image: url('./image/drop-down.svg');
+    background-repeat: no-repeat;
+    width: 134px;
+    right: 18px;
+    top: 85%;
+    font-size: 14px;
+    display: flex;
+    z-index: 9999;
+
+    &__list {
+      list-style: none;
+      padding: 5px 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & li {
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.down {
+  background-image: url('./image/arr-down.svg');
+  background-repeat: no-repeat;
+}
+
+.up {
+  background-image: url('./image/arr-up.svg');
+  background-repeat: no-repeat;
+}
